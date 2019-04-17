@@ -36,6 +36,30 @@ public class VvodTexta
             }
         }
     }    
+    
+    public static void inputInteger(ArrayList<Integer> list)
+    {
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
+        while (!exit)   
+        {
+            if (scanner.hasNextLine())
+            {
+                String str = scanner.nextLine();
+                if (str.length() != 0)
+                {
+                    if (str.matches("[0-9]+"))
+                    {
+                        list.add(Integer.parseInt(str));
+                    }
+                }
+                else if (str.length() == 0)
+                {
+                    exit = true;
+                }
+            }
+        }
+    }
 }
 
 /**
@@ -46,5 +70,27 @@ public class VvodTexta
         {
             list.add(scanner.nextLine());
         }
+    }
+    * 
+    * 
+    public static void inputInteger(ArrayList<Integer> list)
+    {
+      Scanner scanner = new Scanner(System.in);
+      boolean exit = false;
+      while (scanner.hasNextLine())   
+      {
+          String str = scanner.nextLine();
+          if (str.length() != 0)
+          {
+              if (str.matches("[0-9]+"))
+              {
+                  list.add(Integer.parseInt(str));
+              }
+          }
+          else if (str.length() == 0)
+          {
+              exit = true;
+          }
+      }
     }
  */
