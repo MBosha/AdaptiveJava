@@ -1,6 +1,7 @@
 package InputData;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class VvodTexta
@@ -16,7 +17,7 @@ public class VvodTexta
         return result;
     }
    
-    public static void inputText(ArrayList<String> list)
+    public static void inputText(List<String> list)
     {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
@@ -76,7 +77,6 @@ public class VvodTexta
     public static void inputInteger(ArrayList<Integer> list)
     {
       Scanner scanner = new Scanner(System.in);
-      boolean exit = false;
       while (scanner.hasNextLine())   
       {
           String str = scanner.nextLine();

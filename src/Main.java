@@ -9,6 +9,7 @@ public class Main
         //ChessBoard.programm();
         //SymmetricalNumber.programm();
         //MultiplicationTable.programm();
-        TheAverageValue.programm();
+        //TheAverageValue.programm();
+        Cinema.programm();
     }        
 }
