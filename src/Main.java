@@ -10,6 +10,7 @@ public class Main
         //SymmetricalNumber.programm();
         //MultiplicationTable.programm();
         //TheAverageValue.programm();
-        Cinema.programm();
-    }        
+        //Cinema.programm();
+        SwapTheElementsInMatrix.programm();
+    }
 }
