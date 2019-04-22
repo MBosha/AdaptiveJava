@@ -11,6 +11,7 @@ public class Main
         //MultiplicationTable.programm();
         //TheAverageValue.programm();
         //Cinema.programm();
-        SwapTheElementsInMatrix.programm();
+        //SwapTheElementsInMatrix.programm();
+        MKAD.programm();
     }
 }

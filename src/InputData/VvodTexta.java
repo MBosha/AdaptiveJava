@@ -49,7 +49,7 @@ public class VvodTexta
                 String str = scanner.nextLine();
                 if (str.length() != 0)
                 {
-                    if (str.matches("[0-9]+"))
+                    if (str.matches("[0-9-]+"))
                     {
                         list.add(Integer.parseInt(str));
                     }
