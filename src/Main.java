@@ -12,6 +12,7 @@ public class Main
         //TheAverageValue.programm();
         //Cinema.programm();
         //SwapTheElementsInMatrix.programm();
-        MKAD.programm();
+        //MKAD.programm();
+        SortTheTimeMoments.programm();
     }
 }
