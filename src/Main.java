@@ -13,6 +13,7 @@ public class Main
         //Cinema.programm();
         //SwapTheElementsInMatrix.programm();
         //MKAD.programm();
-        SortTheTimeMoments.programm();
+        //SortTheTimeMoments.programm(); not end programm
+        PolygonalCurve.programm();
     }
 }
