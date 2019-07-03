@@ -472,6 +472,104 @@ class Main
     }
 }
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in); 
+        List<String> list = new ArrayList<String>();
+        list = Arrays.stream(scanner.nextLine().split(" "))
+            .map(x -> x.toLowerCase())
+            .collect(Collectors.toList()); 
+        double num= list.stream()
+            .filter(x -> x.equals("a"))
+            .count() / (double)list.size(); 
+        System.out.println(num);
+    }
+}
+
+//1.154 From Roman system into the decimal
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in); 
+        List<String> list = new ArrayList<String>();
+        if (scanner.hasNextLine())
+        {
+            list = Arrays.stream(scanner.nextLine().split(""))
+                .collect(Collectors.toList()); 
+        }
+        int result = 0;
+        for(int i = 0 ; i < list.size() - 1; i++)
+        {
+            String tmp = list.get(i) + list.get(i + 1); 
+            if (doubleChar(tmp) != -1)
+            {
+                result = result + doubleChar(tmp);
+                list.remove(i);
+                list.remove(i);
+                i--;
+            }
+            System.out.println(tmp + " " + result);
+            tmp = "";                
+        }
+        for(int i = 0 ; i < list.size(); i++)
+        {
+            result = result + singleChar(list.get(i).charAt(0));    
+            System.out.println(list.get(i).charAt(0) + " " + result);
+        }
+        System.out.println();  
+        System.out.println(result);
+    }
+    
+    private static int doubleChar (String str)
+    {
+        switch (str) {
+                case "IV":
+                return 4;
+                case "IX":
+                return 9;
+                case "XL":
+                return 40;
+                case "XC":
+                return 90;
+                case "CD":
+                return 400;
+                case "CM":
+                return 900;
+        }
+        return -1;
+    }
+    private static int singleChar (char ch)
+    {
+        switch (ch) {
+                case 'I':
+                return 1;
+                case 'V':
+                return 5;
+                case 'X':
+                return 10;
+                case 'L':
+                return 50;
+                case 'C':
+                return 100;
+                case 'D':
+                return 500;
+                case 'M':
+                return 1000;
+        }
+        return 0;
+    }
+}
+
+
 
 
 */
