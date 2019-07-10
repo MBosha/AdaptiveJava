@@ -14,6 +14,10 @@ public class Main
         //SwapTheElementsInMatrix.programm();
         //MKAD.programm();
         //SortTheTimeMoments.programm(); not end programm
-        PolygonalCurve.programm();
+        //PolygonalCurve.programm();
+        //Snail.programm();
+        byte a = 127;
+        a++;
+        System.out.println(a);
     }
 }
